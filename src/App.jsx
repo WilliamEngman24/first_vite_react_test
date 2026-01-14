@@ -1,4 +1,5 @@
-import './App.css'
+import './App.css';
+import ToDoApp from './components/ToDoApp/toDoApp.jsx';
 
 let greeting = "yo";
 
@@ -6,11 +7,7 @@ function App() {
 
   return (
     <>
-    <h1>Hello World</h1>
-
-    <p>Test</p>
-
-    <p>{greeting}</p>
+    <ToDoApp />
     </>
   )
 }
