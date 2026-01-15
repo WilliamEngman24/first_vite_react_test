@@ -1,8 +1,8 @@
 import React from 'react'
 
-function ToDoItem({text, priority}) {
+function ToDoItem({text}) {
   return (
-    <li>{text} | Prio: {priority} </li>
+    <li>{text}</li>
   )
 }
 
