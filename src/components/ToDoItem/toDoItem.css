@@ -1,0 +1,18 @@
+.checkbox input{
+  display: none;        /* hide real checkbox */
+}
+
+.checkbox .mark {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* unchecked icon */
+.checkbox input + .mark::before{
+  content: "⬜";
+}
+
+/* checked icon */
+.checkbox input:checked + .mark::before{
+  content: "✅";
+}

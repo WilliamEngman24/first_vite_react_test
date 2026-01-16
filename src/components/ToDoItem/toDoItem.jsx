@@ -1,8 +1,16 @@
 import React from 'react'
+import "./toDoItem.css";
 
-function ToDoItem({text}) {
+function ToDoItem({text, done, onRemove}) {
   return (
-    <li>{text}</li>
+    <li>
+      <label classname = "checkbox" checked={done}>
+        <input type="checkbox"/>
+        <span className= "mark"></span>
+      </label>
+      {text}
+      <button onClick={onRemove}>X</button>
+    </li>
   )
 }
 
